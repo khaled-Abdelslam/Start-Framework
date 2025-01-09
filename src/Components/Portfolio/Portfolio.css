@@ -1,0 +1,52 @@
+.portfolioPage {
+
+
+    height: 85vh;
+
+}
+
+.star-portflio,
+.portfolio {
+    color: #2C3E50;
+}
+
+.star-portflio::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #2C3E50;
+    left: 33.125rem;
+    top: .625rem;
+
+}
+
+.star-portflio::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #2C3E50;
+    left: 43.125rem;
+    top: .625rem;
+
+}
+
+.layer {
+    background-color: #1ABC9C;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    -ms-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+}
+
+.image:hover .layer {
+
+    opacity: 0.9;
+}
+
+.image {
+    cursor: pointer;
+}

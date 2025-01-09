@@ -1,0 +1,45 @@
+.ContactPage {
+
+
+    height: 85vh;
+
+}
+
+.star-contact,
+.contact {
+    color: #2C3E50;
+}
+
+.star-contact::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #2C3E50;
+    left: 18.75rem;
+    top: .625rem;
+
+}
+
+.star-contact::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #2C3E50;
+    left: 27.8125rem;
+    top: .625rem;
+
+}
+
+button {
+    background-color: #1ABC9C;
+    border: 0;
+    padding: 8px;
+    color: white;
+}
+
+*:focus {
+    outline: none;
+    
+}
