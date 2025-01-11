@@ -8,13 +8,14 @@ import About from './Components/AboutComponent/About';
 import Portfolio from './Components/Portfolio/Portfolio';
 
 import Contact from './Components/Contact/Contact';
+import Error from './Components/Errorpage/Error';
 
 
 
 const router = createBrowserRouter([
 
   { path: '', element: <Layout /> },
-  
+
   {
     path: 'Start-Framework', element: <Layout />, children: [
       { path: '', element: <Info /> },
@@ -22,16 +23,16 @@ const router = createBrowserRouter([
       { path: 'about', element: <About /> },
       { path: 'portfolio', element: <Portfolio /> },
       { path: 'contact', element: <Contact /> },
+      {
+        path: '*', element: <Error />
+
+      },
     ]
   },
 
 
 
-  // {
-  //   path: '*', element: <div className='vh-100 bg-secondary d-flex justify-content-center align-items-center'>
-  //     <h1 className='fs-1 fw-bolder'>ERROR 4     0     4</h1>
-  //   </div>
-  // },
+
 
 ])
 
@@ -47,7 +48,7 @@ function App() {
 
       <RouterProvider router={router} />
 
-    
+
 
     </>
   )
